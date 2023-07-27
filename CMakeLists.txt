@@ -17,13 +17,13 @@ add_compile_options(                                                    # 添加
     -Wextra
 )
 
-add_subdirectory(
-    inetsock
-)
+add_subdirectory(inetsock)
+add_subdirectory(data/resource)
 
 aux_source_directory(. SRCS)                                            # 查找源文件
 add_executable(${PROJECT_NAME} ${SRCS})                                 # 标识一个可执行文件
 target_link_libraries(                                                  # 将目标文件与上面生成的可执行文件链接在一起
     ${PROJECT_NAME}
     mod_inetsock
+    data_resource
 )
