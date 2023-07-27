@@ -1,0 +1,14 @@
+
+root = true
+
+# All files
+[*]
+# LF 换行
+end_of_line = lf
+# 文件末尾加入新行
+insert_final_newline = true
+# 缩进风格使用空格
+indent_style = space
+# 缩进 4 个空格
+indent_size = 4
+charset = utf-8
